@@ -11,6 +11,8 @@ FPGA 28 - MCU UART RX
 
 The MCU will require GND and 5v.
 
+MCU FLMD0 must be connected to 5v.
+
 MOSFET Drain to MCU REGC (Remove all REGC decoupling caps)
 MOSFET Source to GND. Keep all MOSFET wires as short as possible.
 
