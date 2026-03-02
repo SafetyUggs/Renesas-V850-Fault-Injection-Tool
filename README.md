@@ -20,4 +20,4 @@ This application can scan for suitable pulse width and delay values, and auto ex
 
 Gowin Tang 9k must be flashed with the glitcher firmware (.fs file) before use.
 
-Note: You are deliberately crashing the code executing in the MCU. There is the risk of jumping to the MCU's internal erase code and triggering a chip or sector erase. Once you know the correct pulse parameters there is very little risk of this happening and has not been experienced by me in the hundreds of ours of glitch pulse scanning, though one user reported triggering a chip erase with extremely small delay values.
+Note: You are deliberately crashing the code executing in the MCU. There is the risk of jumping to the MCU's internal erase code and triggering a chip or sector erase, or buffer writes. Once you know the correct pulse parameters there is very little risk of this happening, though one user reported triggering a chip erase with extremely small delay values.
