@@ -19,3 +19,5 @@ MOSFET Source to GND. Keep all MOSFET wires as short as possible.
 This application can scan for suitable pulse width and delay values, and auto extract the firmware upon a match. Once the values are known, successful glitches can be triggered in a few seconds, 9600 baud extractions speed - ~8min for 384kbytes.
 
 Gowin Tang 9k must be flashed with the glitcher firmware (.fs file) before use.
+
+Note: You are deliberately crashing the code executing in the MCU. There is the risk of jumping to the MCU's internal erase code and triggering a chip or sector erase. Once you know the correct pulse parameters there is very little risk of this happening and has not been experienced by me in the hundreds of ours of glitch pulse scanning, though one user reported triggering a chip erase with extremely small delay values.
